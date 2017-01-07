@@ -28,10 +28,10 @@ int main() {
     while (cin >> x) {
         homework.push_back(x);
     }
-    
+
     typedef vector<double>::size_type vec_sz;
     vec_sz size = homework.size();
-    
+
     if (size==0) {
         cout << endl << "You must enter your grades. "
             "Please try again." << endl;
