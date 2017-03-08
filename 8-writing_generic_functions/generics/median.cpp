@@ -23,6 +23,7 @@ using std::isspace;
 template<class T>
 T median(vector<T> v) {
 	typedef typename vector<T>::size_type vec_sz;
+	vec_sz size = v.size();
 	if (size == 0) {
 		throw domain_error("Median of an empty vector");
 	}
