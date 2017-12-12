@@ -4,6 +4,7 @@
 #include <memory>
 #include <stdexcept>
 
+namespace CustomContainers {
 template <typename T>
 class Vec {
 public:
@@ -154,4 +155,5 @@ void Vec<T>::grow() {
 template <typename T>
 void Vec<T>::unchecked_append(const T& val) {
 	alloc.construct(avail++, val);
+}
 }
